@@ -1,17 +1,1 @@
-we run install express to install packs
 
-we make docker file base node and we copy packs + source code on it to make our image 
-
-==> we make .dockerignore file to ignore copying unnesessary files
-
-then we build image and remember -t is for tag 
-
-when we are runing container we use --log-driver=json-file to store log on a json file 
-==> file path is on local host /var/lib/docker/cont-id/id.json
-
-
-we made a docker compose file to increase the availabibity of the app and apply these  two concepts
-
-Redundancy: If one container fails, the other two can continue running, reducing downtime.
-
-Load Distribution: If configured with a load balancer, traffic can be evenly distributed across these containers
