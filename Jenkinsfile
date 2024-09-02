@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('build docker image'){
             steps{
-                sh 'docker build -t my-node-app'
+                sh 'docker build -t my-node-app .'
             }
         }
         stage('test'){
